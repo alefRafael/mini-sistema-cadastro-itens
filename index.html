@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Itens</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Mini Sistema de Cadastro de Itens</h1>
+    <section id="cadastro">
+      <h2>Cadastro</h2>
+      <form id="formItem">
+        <input type="text" id="nome" placeholder="Nome do item" required />
+        <input type="text" id="descricao" placeholder="Descrição" required />
+        <input type="text" id="categoria" placeholder="Categoria" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <section id="busca">
+      <h2>Buscar Itens</h2>
+      <input type="text" id="filtro" placeholder="Buscar por nome ou categoria..." />
+    </section>
+
+    <section id="lista">
+      <h2>Itens Cadastrados</h2>
+      <ul id="itens"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
